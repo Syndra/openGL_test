@@ -13,24 +13,122 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="소스 파일\Object">
+      <UniqueIdentifier>{0fda4ef9-9410-46c6-805c-2397bdb4cedb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Object\Camera">
+      <UniqueIdentifier>{b99a5286-1441-47a7-bdd5-74ab33774c6c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Window">
+      <UniqueIdentifier>{0dec09a4-2803-4e53-87e8-fe0058183c28}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Window\Scene">
+      <UniqueIdentifier>{c04e73f1-d50c-4566-803c-14bb383ba02f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Common_utils">
+      <UniqueIdentifier>{15fb1c60-bf56-42b0-8fc7-a557f3a6cf2c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Vertex_data">
+      <UniqueIdentifier>{a32d063d-30ed-4036-bd40-442c1b4d3d64}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Common_utils">
+      <UniqueIdentifier>{cda034c1-71a8-43bc-ba60-65262607bf15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Object">
+      <UniqueIdentifier>{85d01bcc-cd20-462c-aa94-32f583dfe358}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Window">
+      <UniqueIdentifier>{49643e31-bce1-4f5e-9bff-7a39fa2c5583}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Vertex_data">
+      <UniqueIdentifier>{a2c86f8d-bf69-4c90-8510-6465212158cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Object\Camera">
+      <UniqueIdentifier>{7956fffa-0618-45fe-aa35-3bd1a0d1676a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Common_utils\Texture">
+      <UniqueIdentifier>{dce3a6ea-2537-4c41-a33a-feed5dc2f410}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Common_utils\Texture">
+      <UniqueIdentifier>{533fb306-adf8-463d-9e6a-30c9e5ac3e47}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Common_utils\Input_control">
+      <UniqueIdentifier>{e03693c2-8ae6-4ee7-bc70-5b3994fd3630}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Common_utils\Input_control">
+      <UniqueIdentifier>{c4399ac5-0a76-4e85-b475-3d769283f9df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Window\Scene">
+      <UniqueIdentifier>{d1e42c54-da73-466f-a3b7-03cd9bc37ab3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="linmath.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\Common_utils</Filter>
     </ClInclude>
-    <ClInclude Include="commonLib.h">
-      <Filter>헤더 파일</Filter>
+    <ClInclude Include="Camera.h">
+      <Filter>헤더 파일\Object\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="object.h">
+      <Filter>헤더 파일\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene.h">
+      <Filter>헤더 파일\Window\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Window.h">
+      <Filter>헤더 파일\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="Vertex_data.h">
+      <Filter>헤더 파일\Vertex_data</Filter>
+    </ClInclude>
+    <ClInclude Include="Shader.h">
+      <Filter>헤더 파일\Common_utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture.h">
+      <Filter>헤더 파일\Common_utils\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="control.h">
+      <Filter>헤더 파일\Common_utils\Input_control</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Camera.cpp">
+      <Filter>소스 파일\Object\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="object.cpp">
+      <Filter>소스 파일\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Window.cpp">
+      <Filter>소스 파일\Window</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene.cpp">
+      <Filter>소스 파일\Window\Scene</Filter>
+    </ClCompile>
     <ClCompile Include="shader.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\Common_utils</Filter>
+    </ClCompile>
+    <ClCompile Include="get_texture.cpp">
+      <Filter>소스 파일\Common_utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Vertex_data.cpp">
+      <Filter>소스 파일\Vertex_data</Filter>
     </ClCompile>
     <ClCompile Include="main.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="texture.cpp">
-      <Filter>소스 파일</Filter>
+    <ClCompile Include="Textrue.cpp">
+      <Filter>소스 파일\Common_utils\Texture</Filter>
     </ClCompile>
+    <ClCompile Include="control.cpp">
+      <Filter>소스 파일\Common_utils\Input_control</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="SimpleFragmentShader.txt">
+      <Filter>리소스 파일</Filter>
+    </Text>
+    <Text Include="SimpleVertexShader.txt">
+      <Filter>리소스 파일</Filter>
+    </Text>
   </ItemGroup>
 </Project>

@@ -1,6 +1,7 @@
-#include "commonLib.h"
-#include <vector>
-GLuint LoadShaders(const char * vertex_file_path, const char * fragment_file_path) {
+#include "Shader.h"
+
+
+GLuint Shader::LoadShaders(const char * vertex_file_path, const char * fragment_file_path) {
 
 	// Create the shaders
 	GLuint VertexShaderID = glCreateShader(GL_VERTEX_SHADER);
@@ -93,4 +94,14 @@ GLuint LoadShaders(const char * vertex_file_path, const char * fragment_file_pat
 	glDeleteShader(FragmentShaderID);
 
 	return ProgramID;
+}
+
+
+Shader::Shader()
+{
+}
+
+
+Shader::~Shader()
+{
 }
